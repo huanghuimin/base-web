@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans    
+                        http://www.springframework.org/schema/beans/spring-beans.xsd    
+                        http://www.springframework.org/schema/context    
+                        http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="trackPointService" class="com.geodo.ep.webservice.hbase.impl.TrackPointServiceHBaseImpl"></bean>
+	<bean id="regionHistorySearchService" class="com.geodo.ep.webservice.hbase.impl.RegionHistorySearchServiceHBaseImpl"></bean>
+	<bean id="latestPointService" class="com.geodo.ep.webservice.mongo.impl.LatestPointServiceMongoImpl"></bean>
+	<bean id="regionRecentSearchService" class="com.geodo.ep.webservice.mongo.impl.RegionRecentSearchServiceMongoImpl"></bean>
+	<bean id="statisReportService" class="com.geodo.ep.webservice.mongo.impl.StatisReportServiceMongoImpl"></bean>
+	<bean id="satelliteStatisticsService" class="com.geodo.ep.webservice.trackstatistics.oracle.impl.SateliteStatisticsServiceOracleImpl"></bean>
+	<bean id="trackStatisticsService" class="com.geodo.ep.webservice.trackstatistics.hbase.impl.TrackStatisticsServiceHBaseImpl"></bean>
+</beans>  
